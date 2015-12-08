@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Where does this go?</title>
+  <link rel="stylesheet" href="browser.css">
+</head>
+<body>
+  <div id="container">
+    <div id="urlbar">
+      <ul id="tabbar">
+        <li class="tab active">http://ndcoslo.com</li>
+      </ul>
+      <input id="urlinput">
+      <button id="visit">Visit</button>
+    </div>
+  </div>
+
+  <div id="views">
+    <webview src="http://ndcoslo.com" class="view active"></webview>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
