@@ -4,19 +4,18 @@
   <title>Where does this go?</title>
   <link rel="stylesheet" href="browser.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
 </head>
 <body>
   <div id="container">
     <div id="urlbar" class="row">
-      <ul id="tabbar" class="nav nav-tabs col-xs-6 col-sm-8" role="tablist">
+      <ul id="tabbar" class="nav nav-tabs col-xs-12" role="tablist">
         <li class="active" role="presentation">
           <a href="#tab1" role="tab" aria-controls="home" data-toggle="tab">http://ndcoslo.com</a>
         </li>
       </ul>
-      <div id="searchbar" class="col-xs-6 col-sm-4">
-        <form class="form-inline pull-right">
-          <input id="urlinput" class="form-control">
+      <div id="searchbar" class="col-xs-12">
+        <form id="search-form" class="form-inline">
+          <input id="urlinput" class="form-control" value="http://ndcoslo.com">
           <button id="visit" class="btn btn-primary">Visit</button>
         </form>
       </div>

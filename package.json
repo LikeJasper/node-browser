@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "browser built in node",
   "main": "main.js",
-  "dependencies": {},
+  "dependencies": {
+    "jquery": "^2.1.4"
+  },
   "devDependencies": {
     "electron-builder": "^0.35.4"
   },
