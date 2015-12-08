@@ -3,15 +3,23 @@
 <head>
   <title>Where does this go?</title>
   <link rel="stylesheet" href="browser.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
 </head>
 <body>
   <div id="container">
-    <div id="urlbar">
-      <ul id="tabbar">
-        <li class="tab active">http://ndcoslo.com</li>
+    <div id="urlbar" class="row">
+      <ul id="tabbar" class="nav nav-tabs col-xs-6 col-sm-8" role="tablist">
+        <li class="active" role="presentation">
+          <a href="#tab1" role="tab" aria-controls="home" data-toggle="tab">http://ndcoslo.com</a>
+        </li>
       </ul>
-      <input id="urlinput">
-      <button id="visit">Visit</button>
+      <div id="searchbar" class="col-xs-6 col-sm-4">
+        <form class="form-inline pull-right">
+          <input id="urlinput" class="form-control">
+          <button id="visit" class="btn btn-primary">Visit</button>
+        </form>
+      </div>
     </div>
   </div>
 
@@ -19,6 +27,7 @@
     <webview src="http://ndcoslo.com" class="view active"></webview>
   </div>
 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <script src="renderer.js"></script>
 </body>
 </html>
